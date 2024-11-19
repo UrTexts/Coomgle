@@ -18,8 +18,8 @@ def home():
     results = None
     if request.method == 'POST':
         query = request.form['query']
-        api_key = 'AIzaSyBv19wtlCwZtS6JZ3GgYwaWx6V_O47CBsc'  # Replace with your actual Google API key
-        cx = '9684bfef8b5df4ec0'  # Replace with your Custom Search Engine ID
+        api_key = ''  # Replace with your actual Google API key
+        cx = ''  # Replace with your Custom Search Engine ID
         results = google_search(query, api_key, cx)
     return render_template('index.html', results=results)
 
